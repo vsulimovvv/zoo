@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon -->
+ <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+ <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+ <!-- nouislider -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css" />
+
+ <!-- wSelect -->
+ <link rel="stylesheet" href="css/wSelect.css">
+
+ <!-- Custom Link -->
+ <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Zoo</title>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="container">
+    <nav class="header__wrapper">
+      <a class="logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Животные</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">
+              Услуги и цены
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Фото</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--whatsapp"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--telegram"></a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="header__phone" href="+71234567890">8 (123) 456 78 90</a>
+    </nav>
+  </div>
+</header>
+
+      <main class="main">
+        <section
+  class="hero"
+  style="background-image: url('images/content/hero/bg.png')"
+>
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h1 class="hero__title">Зоосалон в Москве</h1>
+        <div class="hero__text">
+          <p>
+            Все виды услуг для ваших любимых питомцев от квалифицированных
+            провессионалов
+          </p>
+        </div>
+        <button class="hero__btn btn" type="button">Записаться</button>
+      </div>
+
+      <div class="advantages">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__top">
+              <h3 class="advantages__name">Профессионалы</h3>
+            </div>
+            <div class="advantages__text">
+              <p>
+                Проходили обучение в самых лучших школах и постоянно повышаем
+                квалификацию
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__top">
+              <h3 class="advantages__name">Средства ухода</h3>
+            </div>
+            <div class="advantages__text">
+              <p>
+                Мы работаем только с лучшими брендами провессиональной косметики
+                для животных
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__top">
+              <h3 class="advantages__name">Скидки и акции</h3>
+            </div>
+            <div class="advantages__text">
+              <p>
+                Постоянно для всех клиентов проводим акции и дарим скидки на все
+                услуги нашего салона
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="descr">
+  <div class="container">
+    <div class="descr__offer">
+      <h2 class="descr__title section-title">Зоосалон mr.ZOO</h2>
+      <div class="descr__text">
+        <p>
+          для собак и кошек — это рай для животных. Здесь Ваш питомец будет
+          чувствовать себя, как дома. Наши опытные мастера бережно и качественно
+          выполняют свою работу. Нам приятно, когда вы улыбаетесь, забирая
+          своего питомца из салона. Мы ценим своих клиентов.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="descr__preview"
+    style="background-image: url('images/content/descr/bg.jpg')"
+  >
+    <div class="grid"></div>
+  </div>
+</section>
+
+        <section class="services-slider">
+  <div class="container">
+    <div class="services-slider__offer">
+      <h2 class="services-slider__title section-title">
+        Обслуживаем все породы собак и кошек
+      </h2>
+    </div>
+
+    <div class="services-slider__slider swiper">
+      <ul class="services-slider__slides swiper-wrapper">
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+        <li class="services-slider__slide swiper-slide">
+          <div class="breed-card">
+            <div class="breed-card__img">
+              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
+            </div>
+            <h3 class="breed-card__title">Померанский шпиц</h3>
+          </div>
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+        <section class="services">
+  <div class="container">
+    <div class="services__offer">
+      <h2 class="services__title section-title">Наши услуги</h2>
+      <div class="services__text">
+        <p>Оказываем полный комплекс услуг для ваших питомцев</p>
+      </div>
+    </div>
+
+    <div class="services__btns">
+      <button class="services__btn services__btn--active" type="button">
+        Для собак
+      </button>
+      <button class="services__btn" type="button">Для кошек</button>
+    </div>
+
+    <div class="services__content">
+      <ul class="services__list">
+        <li class="services__item">
+          <article class="services-card">
+            <div class="services-card__top">
+              <div class="services-card__img">
+                <img src="images/content/services/1.png" alt="Гигиена" />
+                <span class="services-card__favour"></span>
+              </div>
+              <h3 class="services-card__title">Гигиена</h3>
+            </div>
+            <div class="services-card__bottom">
+              <ul class="services-card__list">
+                <li class="services-card__item">
+                  Купания профессиональной косметикой
+                </li>
+                <li class="services-card__item">Кондиционирование</li>
+                <li class="services-card__item">
+                  Сушка профессиональным феном
+                </li>
+              </ul>
+
+              <div class="services-card__btns">
+                <button class="services-card__btn btn" type="button">
+                  Записатья
+                </button>
+                <button
+                  class="services-card__btn btn btn--stroke"
+                  type="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="services__item">
+          <article class="services-card">
+            <div class="services-card__top">
+              <div class="services-card__img">
+                <img src="images/content/services/1.png" alt="Гигиена" />
+                <span class="services-card__favour"></span>
+              </div>
+              <h3 class="services-card__title">Гигиена</h3>
+            </div>
+            <div class="services-card__bottom">
+              <ul class="services-card__list">
+                <li class="services-card__item">
+                  Купания профессиональной косметикой
+                </li>
+                <li class="services-card__item">Кондиционирование</li>
+                <li class="services-card__item">
+                  Сушка профессиональным феном
+                </li>
+              </ul>
+
+              <div class="services-card__btns">
+                <button class="services-card__btn btn" type="button">
+                  Записатья
+                </button>
+                <button
+                  class="services-card__btn btn btn--stroke"
+                  type="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="services__item">
+          <article class="services-card">
+            <div class="services-card__top">
+              <div class="services-card__img">
+                <img src="images/content/services/1.png" alt="Гигиена" />
+                <span class="services-card__favour"></span>
+              </div>
+              <h3 class="services-card__title">Гигиена</h3>
+            </div>
+            <div class="services-card__bottom">
+              <ul class="services-card__list">
+                <li class="services-card__item">
+                  Купания профессиональной косметикой
+                </li>
+                <li class="services-card__item">Кондиционирование</li>
+                <li class="services-card__item">
+                  Сушка профессиональным феном
+                </li>
+              </ul>
+
+              <div class="services-card__btns">
+                <button class="services-card__btn btn" type="button">
+                  Записатья
+                </button>
+                <button
+                  class="services-card__btn btn btn--stroke"
+                  type="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="services__item">
+          <article class="services-card">
+            <div class="services-card__top">
+              <div class="services-card__img">
+                <img src="images/content/services/1.png" alt="Гигиена" />
+                <span class="services-card__favour"></span>
+              </div>
+              <h3 class="services-card__title">Гигиена</h3>
+            </div>
+            <div class="services-card__bottom">
+              <ul class="services-card__list">
+                <li class="services-card__item">
+                  Купания профессиональной косметикой
+                </li>
+                <li class="services-card__item">Кондиционирование</li>
+                <li class="services-card__item">
+                  Сушка профессиональным феном
+                </li>
+              </ul>
+
+              <div class="services-card__btns">
+                <button class="services-card__btn btn" type="button">
+                  Записатья
+                </button>
+                <button
+                  class="services-card__btn btn btn--stroke"
+                  type="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="services__item">
+          <article class="services-card">
+            <div class="services-card__top">
+              <div class="services-card__img">
+                <img src="images/content/services/1.png" alt="Гигиена" />
+                <span class="services-card__favour"></span>
+              </div>
+              <h3 class="services-card__title">Гигиена</h3>
+            </div>
+            <div class="services-card__bottom">
+              <ul class="services-card__list">
+                <li class="services-card__item">
+                  Купания профессиональной косметикой
+                </li>
+                <li class="services-card__item">Кондиционирование</li>
+                <li class="services-card__item">
+                  Сушка профессиональным феном
+                </li>
+              </ul>
+
+              <div class="services-card__btns">
+                <button class="services-card__btn btn" type="button">
+                  Записатья
+                </button>
+                <button
+                  class="services-card__btn btn btn--stroke"
+                  type="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="services__item">
+          <article class="services-card">
+            <div class="services-card__top">
+              <div class="services-card__img">
+                <img src="images/content/services/1.png" alt="Гигиена" />
+                <span class="services-card__favour"></span>
+              </div>
+              <h3 class="services-card__title">Гигиена</h3>
+            </div>
+            <div class="services-card__bottom">
+              <ul class="services-card__list">
+                <li class="services-card__item">
+                  Купания профессиональной косметикой
+                </li>
+                <li class="services-card__item">Кондиционирование</li>
+                <li class="services-card__item">
+                  Сушка профессиональным феном
+                </li>
+              </ul>
+
+              <div class="services-card__btns">
+                <button class="services-card__btn btn" type="button">
+                  Записатья
+                </button>
+                <button
+                  class="services-card__btn btn btn--stroke"
+                  type="button"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="about">
+  <div class="container">
+    <div
+      class="about__wrapper"
+      style="background-image: url('images/content/about/bg.png')"
+    >
+      <div class="about__offer">
+        <h2 class="about__title section-title">
+          mr.ZOO - особая философия отношений с Вашим питомцем во время всех
+          процедур
+        </h2>
+      </div>
+      <div class="about__content">
+        <ul class="about__list">
+          <li class="about__item">
+            <span class="circle"></span>
+            Абсолютно все питомцы по окончании стрижки получают модный аксессуар
+            и парфюмирование! Все это большой выбор одежды и косметики для
+            Вашего любимца.
+          </li>
+          <li class="about__item">
+            <span class="circle"></span>
+            Мы гордимся нашей командой! Наши мастера и администраторы- это
+            высококвалифицированные профессионалы с огромным опытом работы в
+            сфере груминга, ветеринарии и зоопсихологии.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="trusted">
+  <div class="container">
+    <div class="trusted__offer">
+      <h2 class="trusted__title section-title">Доверьтесь нашим грумерам</h2>
+      <div class="trusted__text">
+        <p>и получите новый образ для своего любимчика</p>
+      </div>
+    </div>
+
+    <ul class="trusted__list">
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+    </ul>
+
+    <div class="trusted__btns">
+      <button class="trusted__btn btn" type="button">Записаться</button>
+      <button class="trusted__btn btn" type="button">Смотреть все работы</button>
+    </div>
+  </div>
+</section>
+
+        <section class="achievements">
+  <div class="container">
+    <h2 class="visually-hidden">Наши цифры</h2>
+
+    <ul class="achievements__list">
+      <li class="achievements__item">
+        <span class="achievements__number">10 000</span>
+        <h3 class="achievements__name">Клиентов</h3>
+        <div class="achievements__text">
+          <p>
+            Зоосалон имеет уже более 10000 довольных клиентов и постоянно
+            участвует в крупных выставках.
+          </p>
+        </div>
+      </li>
+      <li class="achievements__item">
+        <span class="achievements__number">94%</span>
+        <h3 class="achievements__name">Клиентов</h3>
+        <div class="achievements__text">
+          <p>
+            94% наших клиентов становятся постоянными, благодаря
+            профессионализму наших мастеров
+          </p>
+        </div>
+      </li>
+      <li class="achievements__item">
+        <span class="achievements__number">20</span>
+        <h3 class="achievements__name">Грумеров</h3>
+        <div class="achievements__text">
+          <p>
+            Мы высококлассный груминг-салон, а также самый крупный и посещаемый
+            зоосалон для всех видов животных.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section
+  class="discount"
+  style="background-image: url('images/content/discount/bg.png')"
+>
+  <div class="container">
+    <div class="discount__wrapper">
+      <div class="discount__offer">
+        <h2 class="discount__title section-title">
+          Дарим скидку начинающим грумерам
+        </h2>
+        <div class="discount__text">
+          <p>Впервые делаете груминг? Дарим скидку 15% всем новичкам.</p>
+        </div>
+      </div>
+
+      <form action="/" class="form-submit">
+        <label class="form-submit__label">
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите ваше имя"
+          />
+        </label>
+        <label class="form-submit__label">
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Введите ваше имя"
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    123
+  </div>
+</footer>
+    </div>
+
+      <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- nouislider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- wSelect -->
+  <script src="js/wSelect.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/main.min.js"></script>
+  </body>
+</html>
