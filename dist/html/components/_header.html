@@ -1,8 +1,15 @@
 <header class="header">
   <div class="container">
     <nav class="header__wrapper">
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="Логотип" />
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+
+      <a class="header__logo logo" href="#">
+        <picture>
+          <source srcset="images/logo-small.png" media="(max-width: 576px)">
+          <img src="images/logo.png" alt="Логотип">
+        </picture>
       </a>
 
       <div class="header__menu menu">
