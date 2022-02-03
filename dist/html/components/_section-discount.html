@@ -7,12 +7,24 @@
           <p>Впервые делаете груминг? Дарим скидку 15% всем новичкам.</p>
         </div>
 
-        <form action="/" class="form-submit">
+        <form class="form-submit">
           <label class="form-submit__label">
-            <input class="form-submit__input" type="text" placeholder="Введите ваше имя" />
+            <input
+              class="form-submit__input"
+              name="name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
           </label>
           <label class="form-submit__label">
-            <input class="form-submit__input" type="text" placeholder="Введите ваше имя" />
+            <input
+              class="form-submit__input"
+              name="phone"
+              type="text"
+              placeholder="Введите ваш телефон"
+              required
+            />
           </label>
           <button class="form-submit__btn btn" type="submit">Записаться</button>
 
@@ -26,7 +38,13 @@
       </div>
 
       <div class="discount__preview">
-        <img src="images/content/discount/dog.png" alt="Собака">
+        <img src="images/content/discount/dog.png" alt="Собака" />
+      </div>
+      <div class="discount__icon">
+        <p class="discount__percent">
+          новичкам скидка
+          <span>15%</span>
+        </p>
       </div>
     </div>
   </div>

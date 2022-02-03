@@ -21,38 +21,64 @@
 
   <body>
     <div class="site-wrapper">
-      <header class="header header--def">
-  <div class="container">
-    <nav class="header__wrapper">
-      <button class="header__toggle" type="button" aria-label="Открыть меню">
-        <span class="header__toggle-line"></span>
-      </button>
+      <header class="header">
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo-small-dark.png" alt="Логотип" />
+    </a>
 
-      <a class="header__logo logo" href="#">
-        <picture>
-          <source srcset="images/logo-small.png" media="(max-width: 576px)" />
-          <img src="images/logo.png" alt="Логотип" />
-        </picture>
-      </a>
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
 
-      <div class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link menu__link--dropdown" href="#">Животные</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--dropdown" href="#"> Услуги и цены </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Фото</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Связаться с нами</a>
-          </li>
-        </ul>
-      </div>
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button class="mobile-menu-box__name accordion__control" type="button">Животные</button>
 
-      <div class="header__socials socials">
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Собаки</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Кошки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button class="mobile-menu-box__name accordion__control" type="button">
+            Услуги и цены
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Для собак</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Для кошек</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Фото</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Связаться с нами</a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__bottom">
+      <div class="mobile-menu__socials socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--instagram"></a>
@@ -66,27 +92,138 @@
         </ul>
       </div>
 
-      <a class="header__phone" href="+71234567890">8 (123) 456 78 90</a>
+      <a class="mobile-menu__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+
+      <a class="header__logo logo" href="#">
+        <picture>
+          <source srcset="images/logo-small-dark.png" media="(max-width: 576px)" />
+          <img src="images/logo.png" alt="Логотип" />
+        </picture>
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Животные</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Собаки</a></li>
+                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Кошки</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Услуги и цены</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Для собак</a>
+
+                  <div class="submenu">
+                    <ul class="submenu__list">
+                      <li class="submenu__item"><a class="dropmenu__link" href="#">Гигиена</a></li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Комплекс стрижка</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">SPA процедуры</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Чистка зубов</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Экспресс-линька</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Окрашивание</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Для кошек</a>
+
+                  <div class="submenu submenu--cats">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Стрижка кошек</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Экспресс-линька кошек</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Вычесывание шерсти кошек</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Фото</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__socials socials socials--bg-light">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--whatsapp"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--telegram"></a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+
+      <button class="header__btn btn" type="button">Онлайн запись</button>
     </nav>
   </div>
 </header>
 
       <main class="main">
-        <section class="services">
+        <section class="services services--page">
   <div class="container">
     <div class="services__offer">
-      <h2 class="services__title section-title">Наши услуги</h2>
+      <div class="services__top">
+        <h2 class="services__title page-title">Услуги и цены</h2>
+
+        <div class="services__btns">
+          <button
+            class="services__btn btn-filter btn-filter--dogs btn-filter--active"
+            type="button"
+          >
+            Для собак
+          </button>
+          <button class="services__btn btn-filter btn-filter--cats" type="button">Для кошек</button>
+        </div>
+      </div>
+
       <div class="services__text">
         <p>Оказываем полный комплекс услуг для ваших питомцев</p>
       </div>
     </div>
 
     <div class="services__tabs">
-      <div class="services__btns">
-        <button class="services__btn services__btn--active" type="button">Для собак</button>
-        <button class="services__btn" type="button">Для кошек</button>
-      </div>
-
       <div class="services__content">
         <ul class="services__list active">
           <li class="services__item">
@@ -94,7 +231,7 @@
               <div class="services-card__top">
                 <div class="services-card__img">
                   <img src="images/content/services/dogs/1.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <span class="services-card__badge services-card__badge--hygiene"></span>
                 </div>
                 <h3 class="services-card__title">Гигиена</h3>
               </div>
@@ -106,8 +243,10 @@
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -118,21 +257,23 @@
             <article class="services-card">
               <div class="services-card__top">
                 <div class="services-card__img">
-                  <img src="images/content/services/dogs/2.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <img src="images/content/services/dogs/2.png" alt="Комплекс Стрижка" />
+                  <span class="services-card__badge services-card__badge--haircut"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Комплекс Стрижка</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
                   <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Чистка ушей и глаз</li>
+                  <li class="services-card__item">Стрижка по всему корпусу ножницами</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -143,21 +284,23 @@
             <article class="services-card">
               <div class="services-card__top">
                 <div class="services-card__img">
-                  <img src="images/content/services/dogs/3.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <img src="images/content/services/dogs/3.png" alt="SPA процедуры" />
+                  <span class="services-card__badge services-card__badge--spa"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">SPA процедуры</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Фруктовая маска</li>
+                  <li class="services-card__item">Спа комплекс по восстановлению шерсти</li>
+                  <li class="services-card__item">Озонотерапия</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -168,21 +311,23 @@
             <article class="services-card">
               <div class="services-card__top">
                 <div class="services-card__img">
-                  <img src="images/content/services/dogs/4.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <img src="images/content/services/dogs/4.png" alt="Чистка зубов" />
+                  <span class="services-card__badge services-card__badge--teeth"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Чистка зубов</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Чистка зубов без наркоза и боли</li>
+                  <li class="services-card__item">Шлифовка зубов</li>
+                  <li class="services-card__item">Полировка зубов</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -193,21 +338,23 @@
             <article class="services-card">
               <div class="services-card__top">
                 <div class="services-card__img">
-                  <img src="images/content/services/dogs/5.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <img src="images/content/services/dogs/5.png" alt="Экспресс-линька" />
+                  <span class="services-card__badge services-card__badge--molt"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Экспресс-линька</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Вычесывание</li>
+                  <li class="services-card__item">Подстригание когтей</li>
+                  <li class="services-card__item">Чистка глаз и ушей</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -218,21 +365,23 @@
             <article class="services-card">
               <div class="services-card__top">
                 <div class="services-card__img">
-                  <img src="images/content/services/dogs/6.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <img src="images/content/services/dogs/6.png" alt="Окрашивание" />
+                  <span class="services-card__badge services-card__badge--staining"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Окрашивание</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Креативные узоры</li>
+                  <li class="services-card__item">Окрашивание</li>
+                  <li class="services-card__item">Блеск-тату</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -245,21 +394,23 @@
             <article class="services-card">
               <div class="services-card__top">
                 <div class="services-card__img">
-                  <img src="images/content/services/cats/1.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <img src="images/content/services/cats/1.png" alt="Экспресс-линька кошек" />
+                  <span class="services-card__badge services-card__badge--molting-cats"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Экспресс-линька кошек</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Купание профессиональной косметикой</li>
+                  <li class="services-card__item">Нанесение специальной маски</li>
+                  <li class="services-card__item">Сушка феном и вычесывание</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -271,20 +422,24 @@
               <div class="services-card__top">
                 <div class="services-card__img">
                   <img src="images/content/services/cats/2.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <span class="services-card__badge services-card__badge--haircut"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Стрижка кошек</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">
+                    Купание, кондиционирование, сушка, стрижка 
+                  </li>
+                  <li class="services-card__item">Подстригание ногтей</li>
+                  <li class="services-card__item">Чистка глаз и ушей</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
+                  </button>
+                  <button class="services-card__btn btn btn--gray" type="button">
                     Подробнее
                   </button>
                 </div>
@@ -296,22 +451,20 @@
               <div class="services-card__top">
                 <div class="services-card__img">
                   <img src="images/content/services/cats/3.png" alt="Гигиена" />
-                  <span class="services-card__favour"></span>
+                  <span class="services-card__badge services-card__badge--staining"></span>
                 </div>
-                <h3 class="services-card__title">Гигиена</h3>
+                <h3 class="services-card__title">Вычесывание шерсти кошек</h3>
               </div>
               <div class="services-card__bottom">
                 <ul class="services-card__list">
-                  <li class="services-card__item">Купания профессиональной косметикой</li>
-                  <li class="services-card__item">Кондиционирование</li>
-                  <li class="services-card__item">Сушка профессиональным феном</li>
+                  <li class="services-card__item">Вычесывание шерсти</li>
                 </ul>
 
                 <div class="services-card__btns">
-                  <button class="services-card__btn btn btn-registration" type="button">Записатья</button>
-                  <button class="services-card__btn btn btn--stroke" type="button">
-                    Подробнее
+                  <button class="services-card__btn btn btn-registration" type="button">
+                    Записатья
                   </button>
+                  <a class="services-card__btn btn btn--gray" href="#">Подробнее</a>
                 </div>
               </div>
             </article>

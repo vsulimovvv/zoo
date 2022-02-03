@@ -22,6 +22,80 @@
   <body>
     <div class="site-wrapper">
       <header class="header">
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo-small-dark.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button class="mobile-menu-box__name accordion__control" type="button">Животные</button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Собаки</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Кошки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button class="mobile-menu-box__name accordion__control" type="button">
+            Услуги и цены
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Для собак</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Для кошек</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Фото</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Связаться с нами</a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__bottom">
+      <div class="mobile-menu__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--whatsapp"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--telegram"></a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="mobile-menu__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+    </div>
+  </div>
+
   <div class="container">
     <nav class="header__wrapper">
       <button class="header__toggle" type="button" aria-label="Открыть меню">
@@ -30,7 +104,7 @@
 
       <a class="header__logo logo" href="#">
         <picture>
-          <source srcset="images/logo-small.png" media="(max-width: 576px)" />
+          <source srcset="images/logo-small-dark.png" media="(max-width: 576px)" />
           <img src="images/logo.png" alt="Логотип" />
         </picture>
       </a>
@@ -81,7 +155,9 @@
 
                   <div class="submenu submenu--cats">
                     <ul class="submenu__list">
-                      <li class="submenu__item"><a class="dropmenu__link" href="#">Стрижка кошек</a></li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Стрижка кошек</a>
+                      </li>
                       <li class="submenu__item">
                         <a class="dropmenu__link" href="#">Экспресс-линька кошек</a>
                       </li>
@@ -103,7 +179,7 @@
         </ul>
       </div>
 
-      <div class="header__socials socials">
+      <div class="header__socials socials socials--bg-light">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="#" class="socials__link socials__link--instagram"></a>
@@ -118,6 +194,8 @@
       </div>
 
       <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+
+      <button class="header__btn btn" type="button">Онлайн запись</button>
     </nav>
   </div>
 </header>
