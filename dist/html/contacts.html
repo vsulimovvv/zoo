@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('./components/base/_meta.html')
-    @include('./components/base/_links.html')
+    @include('./components/base/_meta.html') @include('./components/base/_links.html')
 
-    <title>Zoo</title>
+    <title>Mr.Zoo</title>
   </head>
 
   <body>
+    @include('./components/popups/_popups.html')
     <div class="site-wrapper">
       @include('./components/_header.html')
-      <main class="main">
-        @include('./components/contacts/_page-contacts.html')
-      </main>
+      <main class="main">@include('./components/contacts/_page-contacts.html')</main>
       @include('./components/_footer.html')
     </div>
 

@@ -15,10 +15,74 @@
  <!-- Custom Link -->
  <link rel="stylesheet" href="css/style.min.css">
 
-    <title>Zoo</title>
+    <title>Mr.Zoo</title>
   </head>
 
   <body>
+    <div class="popup popup--registration">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Комплекс стрижка”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--thanks">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title"><span>Спасибо!</span> Вы успешно записались в наш зоосалон.</h2>
+      <div class="popup__text">
+        <p>Мы перезвоним вам в ближайшее время для уточнения даты и времени!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="site-wrapper">
       <header class="header">
   <div class="overlay"></div>
@@ -194,7 +258,7 @@
 
       <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
 
-      <button class="header__btn btn" type="button">Онлайн запись</button>
+      <button class="header__btn btn btn-registration" type="button">Онлайн запись</button>
     </nav>
   </div>
 </header>
@@ -240,7 +304,7 @@
             </div>
 
             <div class="complex__actions">
-              <button class="complex__btn btn" type="button">Записаться</button>
+              <button class="complex__btn btn btn-registration" type="button">Записаться</button>
               <div class="complex__socials socials socials--bg-light">
                 <ul class="socials__list">
                   <li class="socials__item">
@@ -467,7 +531,7 @@
     </div>
 
     <div class="complex__bottom">
-      <button class="complex__btn btn" type="button">Записаться</button>
+      <button class="complex__btn btn btn-registration" type="button">Записаться</button>
     </div>
   </div>
 </section>
@@ -537,7 +601,7 @@
       <a class="contacts__phone" href="tel:+71234567890"> 8 (123) 456 78 90 </a>
 
       <div class="contacts__actions">
-        <button class="contacts__btn btn btn-registration" type="button">Записаться</button>
+        <button class="contacts__btn btn btn-registration" type="button" >Записаться</button>
 
         <div class="contacts__socials socials socials--bg-light">
           <ul class="socials__list">
