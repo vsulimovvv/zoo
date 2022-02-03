@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('./components/base/_meta.html')
-    @include('./components/base/_links.html')
+    @include('./components/base/_meta.html') @include('./components/base/_links.html')
 
     <title>Zoo</title>
   </head>
 
   <body>
+    @include('./components/popups/_popups.html')
+    <div class="overlay"></div>
+
     <div class="site-wrapper">
       @include('./components/_header.html')
       <main class="main">
-        @include('./components/_hero.html')
-        @include('./components/_section-services.html')
+        @include('./components/_hero.html') @include('./components/_section-services.html')
         @include('./components/_section-descr.html')
         @include('./components/_section-services-slider.html')
-        @include('./components/_section-about.html')
-        @include('./components/_section-trusted.html')
+        @include('./components/_section-about.html') @include('./components/_section-trusted.html')
         @include('./components/_section-achievements.html')
         @include('./components/_section-discount.html')
         @include('./components/_section-contacts.html')

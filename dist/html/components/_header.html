@@ -7,8 +7,8 @@
 
       <a class="header__logo logo" href="#">
         <picture>
-          <source srcset="images/logo-small.png" media="(max-width: 576px)">
-          <img src="images/logo.png" alt="Логотип">
+          <source srcset="images/logo-small.png" media="(max-width: 576px)" />
+          <img src="images/logo.png" alt="Логотип" />
         </picture>
       </a>
 
@@ -16,11 +16,60 @@
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link menu__link--dropdown" href="#">Животные</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Собаки</a></li>
+                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Кошки</a></li>
+              </ul>
+            </div>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--dropdown" href="#">
-              Услуги и цены
-            </a>
+            <a class="menu__link menu__link--dropdown" href="#">Услуги и цены</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Для собак</a>
+
+                  <div class="submenu">
+                    <ul class="submenu__list">
+                      <li class="submenu__item"><a class="dropmenu__link" href="#">Гигиена</a></li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Комплекс стрижка</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">SPA процедуры</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Чистка зубов</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Экспресс-линька</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Окрашивание</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Для кошек</a>
+
+                  <div class="submenu submenu--cats">
+                    <ul class="submenu__list">
+                      <li class="submenu__item"><a class="dropmenu__link" href="#">Стрижка кошек</a></li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Экспресс-линька кошек</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Вычесывание шерсти кошек</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Фото</a>
@@ -45,7 +94,7 @@
         </ul>
       </div>
 
-      <a class="header__phone" href="+71234567890">8 (123) 456 78 90</a>
+      <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
     </nav>
   </div>
 </header>

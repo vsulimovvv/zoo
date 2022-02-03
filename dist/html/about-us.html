@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @include('./components/base/_meta.html') @include('./components/base/_links.html')
+
+    <title>Zoo</title>
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      @include('./components/_header-def.html')
+      <main class="main">
+        @include('./components/about-us/_section-promo.html')
+        @include('./components/_section-about.html')
+        @include('./components/about-us/_section-benefits.html')
+        @include('./components/_section-trusted.html')
+        @include('./components/_section-contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

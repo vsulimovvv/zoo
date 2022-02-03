@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Favicon -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon -->
  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
  <!-- Link Swiper's CSS -->
@@ -19,62 +20,8 @@
   </head>
 
   <body>
-    <div class="popup popup--registration">
-  <div class="popup__container">
-    <button class="popup__close" type="button" aria-label="Закрыть">
-      <svg width="15" height="15">
-        <use xlink:href="images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <div class="popup__wrapper">
-      <h2 class="popup__title">
-        Запись на услугу <br />
-        ”Комплекс стрижка”
-      </h2>
-      <div class="popup__text">
-        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
-      </div>
-
-      <form class="popup__form form-submit">
-        <label class="form-submit__label">
-          <input class="form-submit__input" type="text" placeholder="Введите ваше имя" />
-        </label>
-        <label class="form-submit__label">
-          <input class="form-submit__input" type="text" placeholder="Введите ваше телефон" />
-        </label>
-        <button class="form-submit__btn btn" type="submit">Записаться</button>
-
-        <div class="form-submit__bottom">
-          <p class="form-submit__policy">
-            Отправляя заявку, ввы соглашаетесь с
-            <a href="#">политикой конфидециальности</a>
-          </p>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="popup popup--thanks">
-  <div class="popup__container">
-    <button class="popup__close" type="button" aria-label="Закрыть">
-      <svg width="15" height="15">
-        <use xlink:href="images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <div class="popup__wrapper">
-      <h2 class="popup__title"><span>Спасибо!</span> Вы успешно записались в наш зоосалон.</h2>
-      <div class="popup__text">
-        <p>Мы перезвоним вам в ближайшее время для уточнения даты и времени!</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <div class="overlay"></div>
-
     <div class="site-wrapper">
-      <header class="header">
+      <header class="header header--def">
   <div class="container">
     <nav class="header__wrapper">
       <button class="header__toggle" type="button" aria-label="Открыть меню">
@@ -92,60 +39,9 @@
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link menu__link--dropdown" href="#">Животные</a>
-
-            <div class="dropmenu">
-              <ul class="dropmenu__list">
-                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Собаки</a></li>
-                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Кошки</a></li>
-              </ul>
-            </div>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--dropdown" href="#">Услуги и цены</a>
-
-            <div class="dropmenu">
-              <ul class="dropmenu__list">
-                <li class="dropmenu__item">
-                  <a class="dropmenu__link" href="#">Для собак</a>
-
-                  <div class="submenu">
-                    <ul class="submenu__list">
-                      <li class="submenu__item"><a class="dropmenu__link" href="#">Гигиена</a></li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Комплекс стрижка</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">SPA процедуры</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Чистка зубов</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Экспресс-линька</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Окрашивание</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="dropmenu__item">
-                  <a class="dropmenu__link" href="#">Для кошек</a>
-
-                  <div class="submenu submenu--cats">
-                    <ul class="submenu__list">
-                      <li class="submenu__item"><a class="dropmenu__link" href="#">Стрижка кошек</a></li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Экспресс-линька кошек</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Вычесывание шерсти кошек</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <a class="menu__link menu__link--dropdown" href="#"> Услуги и цены </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Фото</a>
@@ -170,62 +66,13 @@
         </ul>
       </div>
 
-      <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+      <a class="header__phone" href="+71234567890">8 (123) 456 78 90</a>
     </nav>
   </div>
 </header>
 
       <main class="main">
-        <section class="hero">
-  <div class="container">
-    <div class="hero__wrapper">
-      <div class="hero__offer">
-        <h1 class="hero__title">Зоосалон в Москве</h1>
-        <div class="hero__text">
-          <p>Все виды услуг для ваших любимых питомцев от квалифицированных провессионалов</p>
-        </div>
-        <button class="hero__btn btn btn-registration" type="button">Записаться</button>
-      </div>
-
-      <div class="hero__preview">
-        <img src="images/content/hero/dog.png" alt="Собака" />
-      </div>
-
-      <div class="advantages">
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__top">
-              <h3 class="advantages__name">Профессионалы</h3>
-            </div>
-            <div class="advantages__text">
-              <p>Проходили обучение в самых лучших школах и постоянно повышаем квалификацию</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__top">
-              <h3 class="advantages__name">Средства ухода</h3>
-            </div>
-            <div class="advantages__text">
-              <p>Мы работаем только с лучшими брендами провессиональной косметики для животных</p>
-            </div>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__top">
-              <h3 class="advantages__name">Скидки и акции</h3>
-            </div>
-            <div class="advantages__text">
-              <p>
-                Постоянно для всех клиентов проводим акции и дарим скидки на все услуги нашего
-                салона
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
- <section class="services">
+        <section class="services">
   <div class="container">
     <div class="services__offer">
       <h2 class="services__title section-title">Наши услуги</h2>
@@ -470,278 +317,6 @@
             </article>
           </li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section class="descr">
-  <div class="container">
-    <div class="descr__wrapper">
-      <div class="descr__offer">
-        <h2 class="descr__title section-title">Зоосалон mr.ZOO</h2>
-        <div class="descr__text">
-          <p>
-            для собак и кошек — это рай для животных. Здесь Ваш питомец будет чувствовать себя, как
-            дома. Наши опытные мастера бережно и качественно выполняют свою работу. Нам приятно,
-            когда вы улыбаетесь, забирая своего питомца из салона. Мы ценим своих клиентов.
-          </p>
-        </div>
-      </div>
-      <div
-        class="descr__preview"
-        style="background-image: url('images/content/descr/bg.jpg')"
-      ></div>
-    </div>
-    <div class="descr__overlay">
-      <div class="descr__icon"></div>
-    </div>
-  </div>
-
-  <div class="bg"></div>
-</section>
-
-        <section class="services-slider">
-  <div class="container">
-    <div class="services-slider__offer">
-      <h2 class="services-slider__title section-title">
-        Обслуживаем <br />
-        все породы собак и кошек
-      </h2>
-    </div>
-
-    <div class="services-slider__slider swiper">
-      <ul class="services-slider__slides swiper-wrapper">
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-        <li class="services-slider__slide swiper-slide">
-          <div class="breed-card">
-            <div class="breed-card__img">
-              <img src="images/content/breed/1.jpg" alt="Померанский шпиц" />
-            </div>
-            <h3 class="breed-card__title">Померанский шпиц</h3>
-          </div>
-        </li>
-      </ul>
-
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
-
-        <section class="about">
-  <div class="container">
-    <div class="about__wrapper">
-      <div class="about__offer">
-        <h2 class="about__title section-title">
-          mr.ZOO - особая философия отношений с Вашим питомцем <br />
-          во время всех процедур
-        </h2>
-        <div class="about__preview">
-          <img src="images/content/about/bg.png" alt="Кошка с собакой" />
-        </div>
-      </div>
-      <div class="about__content">
-        <ul class="about__list">
-          <li class="about__item">
-            <span class="circle"></span>
-            Абсолютно все питомцы по окончании стрижки получают модный аксессуар и парфюмирование!
-            Все это большой выбор одежды и косметики для Вашего любимца.
-          </li>
-          <li class="about__item">
-            <span class="circle"></span>
-            Мы гордимся нашей командой! Наши мастера и администраторы- это высококвалифицированные
-            профессионалы с огромным опытом работы в сфере груминга, ветеринарии и зоопсихологии.
-          </li>
-        </ul>
-      </div>
-
-      <div class="decor decor-left"></div>
-      <div class="decor decor-right"></div>
-    </div>
-  </div>
-</section>
- <section class="trusted">
-  <div class="container">
-    <div class="trusted__offer">
-      <h2 class="trusted__title section-title">Доверьтесь нашим грумерам</h2>
-      <div class="trusted__text">
-        <p>и получите новый образ для своего любимчика</p>
-      </div>
-    </div>
-
-    <ul class="trusted__list">
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="https://images.unsplash.com/photo-1643653186622-57744bf45be1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-      <li class="trusted__item">
-        <div class="works-card">
-          <img src="images/content/works/1.jpg" alt="Работа 1" />
-        </div>
-      </li>
-    </ul>
-
-    <div class="trusted__btns">
-      <button class="trusted__btn btn btn-registration" type="button">Записаться</button>
-      <a class="trusted__btn btn" href="#">Смотреть все работы</a>
-    </div>
-  </div>
-</section>
-
-        <section class="achievements">
-  <div class="container">
-    <h2 class="visually-hidden">Наши цифры</h2>
-
-    <ul class="achievements__list">
-      <li class="achievements__item">
-        <span class="achievements__number">10 000</span>
-        <h3 class="achievements__name">Клиентов</h3>
-        <div class="achievements__text">
-          <p>
-            Зоосалон имеет уже более 10000 довольных клиентов и постоянно
-            участвует в крупных выставках.
-          </p>
-        </div>
-      </li>
-      <li class="achievements__item">
-        <span class="achievements__number">94%</span>
-        <h3 class="achievements__name">Клиентов</h3>
-        <div class="achievements__text">
-          <p>
-            94% наших клиентов становятся постоянными, благодаря
-            профессионализму наших мастеров
-          </p>
-        </div>
-      </li>
-      <li class="achievements__item">
-        <span class="achievements__number">20</span>
-        <h3 class="achievements__name">Грумеров</h3>
-        <div class="achievements__text">
-          <p>
-            Мы высококлассный груминг-салон, а также самый крупный и посещаемый
-            зоосалон для всех видов животных.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-        <section class="discount">
-  <div class="container">
-    <div class="discount__wrapper">
-      <div class="discount__offer">
-        <h2 class="discount__title section-title">Дарим скидку начинающим грумерам</h2>
-        <div class="discount__text">
-          <p>Впервые делаете груминг? Дарим скидку 15% всем новичкам.</p>
-        </div>
-
-        <form action="/" class="form-submit">
-          <label class="form-submit__label">
-            <input class="form-submit__input" type="text" placeholder="Введите ваше имя" />
-          </label>
-          <label class="form-submit__label">
-            <input class="form-submit__input" type="text" placeholder="Введите ваше имя" />
-          </label>
-          <button class="form-submit__btn btn" type="submit">Записаться</button>
-
-          <div class="form-submit__bottom">
-            <p class="form-submit__policy">
-              Отправляя заявку, ввы соглашаетесь с
-              <a href="#">политикой конфидециальности</a>
-            </p>
-          </div>
-        </form>
-      </div>
-
-      <div class="discount__preview">
-        <img src="images/content/discount/dog.png" alt="Собака">
       </div>
     </div>
   </div>

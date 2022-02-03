@@ -21,7 +21,7 @@
 
   <body>
     <div class="site-wrapper">
-      <header class="header">
+      <header class="header header--def">
   <div class="container">
     <nav class="header__wrapper">
       <button class="header__toggle" type="button" aria-label="Открыть меню">
@@ -39,60 +39,9 @@
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link menu__link--dropdown" href="#">Животные</a>
-
-            <div class="dropmenu">
-              <ul class="dropmenu__list">
-                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Собаки</a></li>
-                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Кошки</a></li>
-              </ul>
-            </div>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--dropdown" href="#">Услуги и цены</a>
-
-            <div class="dropmenu">
-              <ul class="dropmenu__list">
-                <li class="dropmenu__item">
-                  <a class="dropmenu__link" href="#">Для собак</a>
-
-                  <div class="submenu">
-                    <ul class="submenu__list">
-                      <li class="submenu__item"><a class="dropmenu__link" href="#">Гигиена</a></li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Комплекс стрижка</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">SPA процедуры</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Чистка зубов</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Экспресс-линька</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Окрашивание</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="dropmenu__item">
-                  <a class="dropmenu__link" href="#">Для кошек</a>
-
-                  <div class="submenu submenu--cats">
-                    <ul class="submenu__list">
-                      <li class="submenu__item"><a class="dropmenu__link" href="#">Стрижка кошек</a></li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Экспресс-линька кошек</a>
-                      </li>
-                      <li class="submenu__item">
-                        <a class="dropmenu__link" href="#">Вычесывание шерсти кошек</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <a class="menu__link menu__link--dropdown" href="#"> Услуги и цены </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Фото</a>
@@ -117,13 +66,61 @@
         </ul>
       </div>
 
-      <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+      <a class="header__phone" href="+71234567890">8 (123) 456 78 90</a>
     </nav>
   </div>
 </header>
 
       <main class="main">
-        
+        <section class="contacts contacts--page">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <h1 class="contacts__title section-title">Контакты</h1>
+
+      <address class="contacts__address">
+        <span class="contacts__name"> по адресу: </span>
+        Москва, Название улицы 10, офис 11
+      </address>
+
+      <a class="contacts__phone" href="tel:+71234567890"> 8 (123) 456 78 90 </a>
+
+      <div class="contacts__actions">
+        <button class="contacts__btn btn" type="button">Записаться</button>
+
+        <div class="contacts__socials socials socials--bg-light">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--instagram"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--whatsapp"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--telegram"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contacts__info">
+        <div class="contacts__schedule">
+          <span class="contacts__name">режим работы:</span>
+          пн - пт с 09:00 до 19:00 | сб - вс выходные
+        </div>
+
+        <div class="contacts__mail">
+          <span class="contacts__name">e-mail:</span>
+          <a href="mailto:info@mrzoo.ru">info@mrzoo.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts__map map">
+    <img src="images/content/map-bg.jpg" alt="Каррат заглушка" />
+  </div>
+</section>
+
       </main>
       <footer class="footer">
   <div class="container">
