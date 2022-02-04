@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Favicon -->
+ <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+ <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+ <!-- Custom Link -->
+ <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Mr.Zoo</title>
+  </head>
+
+  <body>
+    <div class="popup popup--registration">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Комплекс стрижка”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--thanks">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title"><span>Спасибо!</span> Вы успешно записались в наш зоосалон.</h2>
+      <div class="popup__text">
+        <p>Мы перезвоним вам в ближайшее время для уточнения даты и времени!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="overlay"></div>
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo-small-dark.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button class="mobile-menu-box__name accordion__control" type="button">Животные</button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Собаки</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Кошки</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button class="mobile-menu-box__name accordion__control" type="button">
+            Услуги и цены
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Для собак</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Для кошек</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Фото</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">Связаться с нами</a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__bottom">
+      <div class="mobile-menu__socials socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--whatsapp"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--telegram"></a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="mobile-menu__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="header__wrapper">
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+
+      <a class="header__logo logo" href="#">
+        <picture>
+          <source srcset="images/logo-small-dark.png" media="(max-width: 576px)" />
+          <img src="images/logo.png" alt="Логотип" />
+        </picture>
+      </a>
+
+      <div class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Животные</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Собаки</a></li>
+                <li class="dropmenu__item"><a class="dropmenu__link" href="#">Кошки</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--dropdown" href="#">Услуги и цены</a>
+
+            <div class="dropmenu">
+              <ul class="dropmenu__list">
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Для собак</a>
+
+                  <div class="submenu">
+                    <ul class="submenu__list">
+                      <li class="submenu__item"><a class="dropmenu__link" href="#">Гигиена</a></li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Комплекс стрижка</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">SPA процедуры</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Чистка зубов</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Экспресс-линька</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Окрашивание</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="dropmenu__item">
+                  <a class="dropmenu__link" href="#">Для кошек</a>
+
+                  <div class="submenu submenu--cats">
+                    <ul class="submenu__list">
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Стрижка кошек</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Экспресс-линька кошек</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="dropmenu__link" href="#">Вычесывание шерсти кошек</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Фото</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Связаться с нами</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__socials socials socials--bg-light">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--instagram"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--whatsapp"></a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--telegram"></a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="header__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+
+      <button class="header__btn btn btn-registration" type="button">Онлайн запись</button>
+    </nav>
+  </div>
+</header>
+
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active">Комплекс стрижка</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="main">
+        <section class="complex">
+  <div class="container">
+    <div class="complex__wrapper">
+      <div class="complex__left">
+        <div class="complex__top">
+          <h1 class="complex__title page-title">Комплекс стрижка собак</h1>
+        </div>
+        <div class="complex__inner">
+          <div class="complex__preview">
+            <img src="images/content/works/1.jpg" alt="Стрижка собак" />
+          </div>
+
+          <div class="complex__info">
+            <div class="complex__text">
+              <p>
+                Одной из самых важных процедур является стрижка шерсти собак, и этим должен
+                заниматься только профессионал. Наши мастера грумеры специализируются на стрижке
+                различных пород собак. Сложность работы не важна, в нашем салоне стригут
+                длинношерстных и короткошерстных собак, больших и маленьких пород.
+              </p>
+            </div>
+
+            <div class="complex__actions">
+              <button class="complex__btn btn btn-registration" type="button">Записаться</button>
+              <div class="complex__socials socials socials--bg-light">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--instagram"></a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--whatsapp"></a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--telegram"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="complex__right complex-details">
+        <h3 class="complex-details__heading">В комплекс входят услуги:</h3>
+        <ul class="complex-details__list">
+          <li class="complex-details__item">Купание</li>
+          <li class="complex-details__item">Кондиционирование</li>
+          <li class="complex-details__item">Сушка</li>
+          <li class="complex-details__item">Стрижка</li>
+          <li class="complex-details__item">Чистка ушей и глаз</li>
+          <li class="complex-details__item">Стрижка по всему корпусу ножницами</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="complex__catalog">
+      <h2 class="complex__heading">Наши цены</h2>
+      <div class="complex__prices">
+        <div class="price-box">
+          <div class="price-box__top">
+            <p class="price-box__heading">Декоративные породы собак</p>
+          </div>
+          <ul class="price-box__list">
+            <li class="price-box__item">
+              <span class="price-box__name">Австралийский терьер</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Грифон, Брабансон</span>
+              <span class="price-box__price">1800 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Йоркширский терьер, бивер</span>
+              <span class="price-box__price">2100 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Китайская хохлатая голая</span>
+              <span class="price-box__price">1900 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Китайская хохлатая пуховая</span>
+              <span class="price-box__price">2100 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Лхаса апсо</span>
+              <span class="price-box__price">2300 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Мопс (наголо)</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Московский дракон</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Папильон (наголо)</span>
+              <span class="price-box__price">1200 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Пекинес</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Петербуржская орхидея</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Той-терьер, Чихуа (наголо)</span>
+              <span class="price-box__price">1200 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Шпиц Малый</span>
+              <span class="price-box__price">2500 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Японский хин</span>
+              <span class="price-box__price">1800 <span>руб</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <div class="price-box__top">
+            <p class="price-box__heading">Средние породы собак</p>
+          </div>
+          <ul class="price-box__list">
+            <li class="price-box__item">
+              <span class="price-box__name">Австралийский терьер</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Грифон, Брабансон</span>
+              <span class="price-box__price">1800 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Йоркширский терьер, бивер</span>
+              <span class="price-box__price">2100 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Китайская хохлатая голая</span>
+              <span class="price-box__price">1900 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Китайская хохлатая пуховая</span>
+              <span class="price-box__price">2100 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Лхаса апсо</span>
+              <span class="price-box__price">2300 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Мопс (наголо)</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Московский дракон</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Папильон (наголо)</span>
+              <span class="price-box__price">1200 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Пекинес</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Петербуржская орхидея</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Той-терьер, Чихуа (наголо)</span>
+              <span class="price-box__price">1200 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Шпиц Малый</span>
+              <span class="price-box__price">2500 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Японский хин</span>
+              <span class="price-box__price">1800 <span>руб</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="price-box">
+          <div class="price-box__top">
+            <p class="price-box__heading">Большие породы собак</p>
+          </div>
+          <ul class="price-box__list">
+            <li class="price-box__item">
+              <span class="price-box__name">Австралийский терьер</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Грифон, Брабансон</span>
+              <span class="price-box__price">1800 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Йоркширский терьер, бивер</span>
+              <span class="price-box__price">2100 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Китайская хохлатая голая</span>
+              <span class="price-box__price">1900 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Китайская хохлатая пуховая</span>
+              <span class="price-box__price">2100 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Лхаса апсо</span>
+              <span class="price-box__price">2300 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Мопс (наголо)</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Московский дракон</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Папильон (наголо)</span>
+              <span class="price-box__price">1200 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Пекинес</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Петербуржская орхидея</span>
+              <span class="price-box__price">2000 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Той-терьер, Чихуа (наголо)</span>
+              <span class="price-box__price">1200 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Шпиц Малый</span>
+              <span class="price-box__price">2500 <span>руб</span></span>
+            </li>
+            <li class="price-box__item">
+              <span class="price-box__name">Японский хин</span>
+              <span class="price-box__price">1800 <span>руб</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="complex__bottom">
+      <button class="complex__btn btn btn-registration" type="button">Записаться</button>
+    </div>
+  </div>
+</section>
+
+        <section class="trusted">
+  <div class="container">
+    <h2 class="trusted__title trusted__title--fz30 section-title">Доверьтесь нашим грумерам</h2>
+
+    <ul class="trusted__list">
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/1.jpg" alt="Работа 1" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img
+            src="images/content/works/2.jpg"
+            alt="Работа 2"
+          />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/3.jpg" alt="Работа 3" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/4.jpg" alt="Работа 4" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/5.jpg" alt="Работа 5" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/6.jpg" alt="Работа 6" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/7.jpg" alt="Работа 7" />
+        </div>
+      </li>
+      <li class="trusted__item">
+        <div class="works-card">
+          <img src="images/content/works/8.jpg" alt="Работа 8" />
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <h2 class="contacts__title section-title">Ждем вас в гости</h2>
+
+      <address class="contacts__address">
+        <span class="contacts__name"> по адресу: </span>
+        Москва, Название улицы 10, офис 11
+      </address>
+
+      <a class="contacts__phone" href="tel:+71234567890"> 8 (123) 456 78 90 </a>
+
+      <div class="contacts__actions">
+        <button class="contacts__btn btn btn-registration" type="button" >Записаться</button>
+
+        <div class="contacts__socials socials socials--bg-light">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--instagram"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--whatsapp"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--telegram"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contacts__info">
+        <div class="contacts__schedule">
+          <span class="contacts__name">режим работы:</span>
+          пн - пт с 09:00 до 19:00 | сб - вс выходные
+        </div>
+
+        <div class="contacts__mail">
+          <span class="contacts__name">e-mail:</span>
+          <a href="mailto:info@mrzoo.ru">info@mrzoo.ru</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contacts__map map">
+    <img src="images/content/map-bg.jpg" alt="Каррат заглушка" />
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <a class="footer__logo logo" href="#">
+        <img src="images/logo.png" alt="Логотип" />
+      </a>
+
+      <div class="footer__menu">
+        <div class="footer__lists">
+          <span class="footer__name">УСЛУГИ</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Гигиена</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Стрижка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Spa процедуры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Чистка зубов</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Экспресс-линька</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Окрашивание</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__lists">
+          <span class="footer__name">КОМПАНИЯ</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Животные</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Фото</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__contacts contacts-footer">
+        <a class="footer__phone" href="tel:+71234567890">8 (123) 456 78 90</a>
+        <address class="footer__address">Москва, Название улицы 10, офис 11</address>
+        <div class="footer__schedule">пн - пт с 09:00 до 19:00 | сб - вс выходные</div>
+        <a class="footer__mail" href="mailto:info@mrzoo.ru">info@mrzoo.ru</a>
+      </div>
+
+      <div class="footer__actions">
+        <button class="footer__btn btn btn-registration" type="btn">Записаться</button>
+
+        <div class="footer__socials socials socials--bg-light">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--instagram"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--whatsapp"></a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link socials__link--telegram"></a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="footer__up up-btn" href="#">
+          <span class="up-btn__icon">
+            <svg width="16" height="12">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </span>
+          <span class="up-btn__text">Наверх</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__policy" href="#">Политика конфиденциальности</a>
+        <div class="footer__company">
+          Разработка сайта:
+          <a href="#">
+            <img src="images/logo-company.png" alt="Адванс Медия" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- MixItUp -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
