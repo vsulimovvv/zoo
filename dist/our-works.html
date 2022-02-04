@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Favicon -->
- <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Favicon -->
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
 
- <!-- Link Swiper's CSS -->
- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
- <!-- Custom Link -->
- <link rel="stylesheet" href="css/style.min.css">
+<!-- Choices JS  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
 
     <title>Mr.Zoo</title>
   </head>
 
   <body>
-    <div class="popup popup--registration">
+    <!-- <div class="popup popup--registration">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -33,7 +37,7 @@
       </div>
 
       <form class="popup__form form-submit">
-        <label class="form-submit__label">
+        <label class="form-submit__label form-submit__label--name">
           <input
             class="form-submit__input"
             name="name"
@@ -42,7 +46,290 @@
             required
           />
         </label>
-        <label class="form-submit__label">
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<div class="popup popup--hygiene">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Гигиена”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup popup--haircut">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Комплекс Стрижка”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup popup--spa">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”SPA процедуры”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup popup--teeth">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Чистка зубов”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup popup--molt">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Экспресс-линька”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup popup--staining">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Запись на услугу <br />
+        ”Окрашивание”
+      </h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
           <input
             class="form-submit__input"
             name="phone"
@@ -80,6 +367,64 @@
   </div>
 </div>
 
+<div class="popup popup--default">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Запись в зоосалон</h2>
+      <div class="popup__text">
+        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
+      </div>
+
+      <form class="popup__form form-submit">
+        <div class="form-submit__select">
+          <select class="select" name="pet" id="pet">
+            <option value="def">Укажите вашего питомца</option>
+            <option value="spitz">Померанский шпиц</option>
+            <option value="griffon">Грифон</option>
+          </select>
+        </div>
+        <div class="form-submit__select">
+          <select class="form-submit__select select" name="pets" id="service">
+            <option value="def">Выбериту нужную услугу</option>
+            <option value="haircut">Стрижка</option>
+            <option value="spa">SPA пароцедуры</option>
+          </select>
+        </div>
+        <label class="form-submit__label form-submit__label--name">
+          <input
+            class="form-submit__input"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </label>
+        <label class="form-submit__label form-submit__label--phone">
+          <input
+            class="form-submit__input"
+            name="phone"
+            type="text"
+            placeholder="Введите ваш телефон"
+            required
+          />
+        </label>
+        <button class="form-submit__btn btn" type="submit">Записаться</button>
+
+        <div class="form-submit__bottom">
+          <p class="form-submit__policy">
+            Отправляя заявку, ввы соглашаетесь с
+            <a href="#">политикой конфидециальности</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
     <div class="site-wrapper">
       <header class="header">
   <div class="overlay"></div>
@@ -369,7 +714,7 @@
       <a class="contacts__phone" href="tel:+71234567890"> 8 (123) 456 78 90 </a>
 
       <div class="contacts__actions">
-        <button class="contacts__btn btn btn-registration" type="button" >Записаться</button>
+        <button class="contacts__btn btn btn-registration" type="button">Записаться</button>
 
         <div class="contacts__socials socials socials--bg-light">
           <ul class="socials__list">
@@ -401,7 +746,13 @@
   </div>
 
   <div class="contacts__map map">
-    <img src="images/content/map-bg.jpg" alt="Каррат заглушка" />
+    <!-- <img src="images/content/map-bg.jpg" alt="Каррат заглушка" /> -->
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A12b49ffb99f42c2b7018cbf5a0fa008e6e2eb06ee78d7674fecf623f8851a61a&amp;source=constructor"
+      width="1069"
+      height="519"
+      frameborder="0"
+    ></iframe>
   </div>
 </section>
 
@@ -513,6 +864,9 @@
 
 <!-- MixItUp -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
 <!-- JS -->
 <script src="js/main.min.js"></script>
