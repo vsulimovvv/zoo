@@ -20,55 +20,7 @@
   </head>
 
   <body>
-    <!-- <div class="popup popup--registration">
-  <div class="popup__container">
-    <button class="popup__close" type="button" aria-label="Закрыть">
-      <svg width="15" height="15">
-        <use xlink:href="images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <div class="popup__wrapper">
-      <h2 class="popup__title">
-        Запись на услугу <br />
-        ”Комплекс стрижка”
-      </h2>
-      <div class="popup__text">
-        <p>Заполните форму записи и мы вам перезвоним для уточнения даты и времени</p>
-      </div>
-
-      <form class="popup__form form-submit">
-        <label class="form-submit__label form-submit__label--name">
-          <input
-            class="form-submit__input"
-            name="name"
-            type="text"
-            placeholder="Введите ваше имя"
-            required
-          />
-        </label>
-        <label class="form-submit__label form-submit__label--phone">
-          <input
-            class="form-submit__input"
-            name="phone"
-            type="text"
-            placeholder="Введите ваш телефон"
-            required
-          />
-        </label>
-        <button class="form-submit__btn btn" type="submit">Записаться</button>
-
-        <div class="form-submit__bottom">
-          <p class="form-submit__policy">
-            Отправляя заявку, ввы соглашаетесь с
-            <a href="#">политикой конфидециальности</a>
-          </p>
-        </div>
-      </form>
-    </div>
-  </div>
-</div> -->
-
-<div class="popup popup--hygiene">
+    <div class="popup popup--hygiene">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -98,7 +50,7 @@
           <input
             class="form-submit__input"
             name="phone"
-            type="text"
+            type="tel"
             placeholder="Введите ваш телефон"
             required
           />
@@ -145,7 +97,7 @@
           <input
             class="form-submit__input"
             name="phone"
-            type="text"
+            type="tel"
             placeholder="Введите ваш телефон"
             required
           />
@@ -239,7 +191,7 @@
           <input
             class="form-submit__input"
             name="phone"
-            type="text"
+            type="tel"
             placeholder="Введите ваш телефон"
             required
           />
@@ -286,7 +238,7 @@
           <input
             class="form-submit__input"
             name="phone"
-            type="text"
+            type="tel"
             placeholder="Введите ваш телефон"
             required
           />
@@ -333,7 +285,7 @@
           <input
             class="form-submit__input"
             name="phone"
-            type="text"
+            type="tel"
             placeholder="Введите ваш телефон"
             required
           />
@@ -384,8 +336,8 @@
         <div class="form-submit__select">
           <select class="select" name="pet" id="pet">
             <option value="def">Укажите вашего питомца</option>
-            <option value="spitz">Померанский шпиц</option>
-            <option value="griffon">Грифон</option>
+            <option value="dog">Собака</option>
+            <option value="cat">Кошка</option>
           </select>
         </div>
         <div class="form-submit__select">
@@ -408,7 +360,7 @@
           <input
             class="form-submit__input"
             name="phone"
-            type="text"
+            type="tel"
             placeholder="Введите ваш телефон"
             required
           />
@@ -425,6 +377,7 @@
     </div>
   </div>
 </div>
+
     <div class="site-wrapper">
       <header class="header">
   <div class="overlay"></div>
@@ -822,12 +775,12 @@
             <input
               class="form-submit__input"
               name="phone"
-              type="text"
+              type="tel"
               placeholder="Введите ваш телефон"
               required
             />
           </label>
-          
+
           <button class="form-submit__btn btn" type="submit">Записаться</button>
 
           <div class="form-submit__bottom">
@@ -839,9 +792,10 @@
         </form>
       </div>
 
-      <div class="discount__preview">
-        <img src="images/content/discount/dog.png" alt="Собака" />
-      </div>
+      <div
+        class="discount__preview"
+        style="background-image: url('images/content/discount/dog.png')"
+      ></div>
       <div class="discount__icon">
         <p class="discount__percent">
           новичкам скидка
@@ -897,12 +851,10 @@
   </div>
 
   <div class="contacts__map map">
-    <!-- <img src="images/content/map-bg.jpg" alt="Каррат заглушка" /> -->
     <iframe
       src="https://yandex.ru/map-widget/v1/?um=constructor%3A12b49ffb99f42c2b7018cbf5a0fa008e6e2eb06ee78d7674fecf623f8851a61a&amp;source=constructor"
       width="1069"
       height="519"
-      frameborder="0"
     ></iframe>
   </div>
 </section>
@@ -966,7 +918,7 @@
       </div>
 
       <div class="footer__actions">
-        <button class="footer__btn btn btn-registration" type="btn">Записаться</button>
+        <button class="footer__btn btn btn-registration" type="button">Записаться</button>
 
         <div class="footer__socials socials socials--bg-light">
           <ul class="socials__list">
@@ -1018,7 +970,20 @@
 
 <!-- Choices JS -->
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<!-- 
+  
+ -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"
+  type="text/javascript"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
 
+<!-- Input Mask -->
+<script src="https://unpkg.com/imask"></script>
 <!-- JS -->
 <script src="js/main.min.js"></script>
 
