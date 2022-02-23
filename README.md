@@ -5,4 +5,4 @@
 Наши работы: https://vsulimovvv.github.io/zoo/dist/our-works.html  
 Животные: https://vsulimovvv.github.io/zoo/dist/pets.html  
 Услуги и цены: https://vsulimovvv.github.io/zoo/dist/services-prices.html  
-Комплекс услуг: https://vsulimovvv.github.io/zoo/dist/complex.html  
+Комплекс услуг: https://vsulimovvv.github.io/zoo/dist/page-service-description.html 
